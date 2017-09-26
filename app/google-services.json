@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "559138699009-u4uvv4nu7gkjn32s9idop15ien6cglpo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thiqah.testretrofit",
+            "certificate_hash": "43204456101169a2181466f2d3b23005872ea5c1"
+          }
+        },
+        {
           "client_id": "559138699009-lmcciidf8jruts3q6v3nakjosfkd6auo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
