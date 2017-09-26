@@ -41,4 +41,7 @@ public class User {
         return userId;
     }
 
+    public boolean isCompleted() {
+        return completed;
+    }
 }
