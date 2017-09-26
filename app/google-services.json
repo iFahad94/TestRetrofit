@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "559138699009",
+    "firebase_url": "https://testretrofit-d5f5e.firebaseio.com",
+    "project_id": "testretrofit-d5f5e",
+    "storage_bucket": "testretrofit-d5f5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559138699009:android:963e66e720d1dd21",
+        "android_client_info": {
+          "package_name": "com.example.thiqah.testretrofit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559138699009-lmcciidf8jruts3q6v3nakjosfkd6auo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thiqah.testretrofit",
+            "certificate_hash": "1a9880ec2d6d940ef39c13998400a51b53f16c18"
+          }
+        },
+        {
+          "client_id": "559138699009-1cbm5dii7se55nell0647clavkgegvgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy9oTBigqV8O3aS0whgmzK1dJ1ZbVRh8k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559138699009-1cbm5dii7se55nell0647clavkgegvgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
