@@ -3,6 +3,10 @@ package com.example.thiqah.testretrofit;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
+import android.test.ActivityTestCase;
+import android.test.InstrumentationTestCase;
+
+import junit.framework.TestCase;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +19,7 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 @RunWith(AndroidJUnit4.class)
-public class ExampleInstrumentedTest {
+public class ExampleInstrumentedTest extends TestCase{
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
@@ -23,4 +27,5 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.example.thiqah.testretrofit", appContext.getPackageName());
     }
+
 }
