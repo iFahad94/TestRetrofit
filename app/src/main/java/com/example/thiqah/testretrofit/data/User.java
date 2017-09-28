@@ -40,8 +40,4 @@ public class User {
     public int getUserId() {
         return userId;
     }
-
-    public boolean isCompleted() {
-        return completed;
-    }
 }
