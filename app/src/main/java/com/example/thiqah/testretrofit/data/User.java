@@ -37,6 +37,7 @@ public class User {
         return id;
     }
 
+    // get the user id
     public int getUserId() {
         return userId;
     }
