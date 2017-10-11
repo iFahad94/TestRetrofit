@@ -8,7 +8,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 
-public interface ApiInterface {
+public interface ApiEndPoints {
     @GET("todos")
     Call<List<User>> getTodos();
 }

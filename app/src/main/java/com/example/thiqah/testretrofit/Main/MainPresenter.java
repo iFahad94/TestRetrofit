@@ -26,7 +26,8 @@ class MainPresenter implements MainContract.Presenter {
         userRepository = UserRepository.newInstance(usersRemoteDataSource, usersLocalDataSource);
     }
 
-    void loadUsers() {
+    @Override
+    public void loadUsers() {
         userRepository.getUser(new UsersDataSource.LoadUserCallBack() {
             @Override
             public void onUserLoaded(ArrayList<User> users) {

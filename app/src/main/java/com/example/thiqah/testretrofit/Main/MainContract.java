@@ -14,5 +14,6 @@ interface MainContract {
 
     interface Presenter {
         void openUserDetails(User user);
+        void loadUsers();
     }
 }

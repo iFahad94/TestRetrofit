@@ -1,10 +1,12 @@
 package com.example.thiqah.testretrofit.data.source.remote;
 
 
+import android.support.annotation.NonNull;
+
 import com.example.thiqah.testretrofit.data.User;
 import com.example.thiqah.testretrofit.data.UsersDataSource;
 import com.example.thiqah.testretrofit.data.rest.ApiClient;
-import com.example.thiqah.testretrofit.data.rest.ApiInterface;
+import com.example.thiqah.testretrofit.data.rest.ApiEndPoints;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,16 +32,16 @@ public class UsersRemoteDataSource implements UsersDataSource {
 
     @Override
     public void getUser(final LoadUserCallBack callBack) {
-        ApiInterface apiInterface = ApiClient.getClient().create(ApiInterface.class);
-        Call<List<User>> call = apiInterface.getTodos();
+        ApiEndPoints apiEndPoints = ApiClient.getClient().create(ApiEndPoints.class);
+        Call<List<User>> call = apiEndPoints.getTodos();
         call.enqueue(new Callback<List<User>>() {
             @Override
-            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+            public void onResponse(@NonNull Call<List<User>> call, @NonNull Response<List<User>> response) {
                 callBack.onUserLoaded((ArrayList<User>) response.body());
             }
 
             @Override
-            public void onFailure(Call<List<User>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<User>> call, @NonNull Throwable t) {
                 t.printStackTrace();
             }
         });
